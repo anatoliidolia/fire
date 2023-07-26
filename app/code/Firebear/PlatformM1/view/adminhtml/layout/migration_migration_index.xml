@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright: Copyright © 2019 Firebear Studio. All rights reserved.
+ * @author   : Firebear Studio <fbeardev@gmail.com>
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Firebear_ImportExport::css/listing.css"/>
+        <css src="Firebear_PlatformM1::css/menu.css"/>
+        <link src="Firebear_PlatformM1::js/functions.js"/>
+    </head>
+    <body>
+        <referenceContainer name="page.content">
+            <block before="page_main_actions" class="Firebear\PlatformM1\Block\Adminhtml\Menu" name="firebear.menu.platformm1"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Firebear\PlatformM1\Block\Adminhtml\Migration\Shell" name="add.shell" template="Firebear_PlatformM1::shell.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

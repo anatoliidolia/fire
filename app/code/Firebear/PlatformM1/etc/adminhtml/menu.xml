@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Firebear_PlatformM1::migrations" title="Data migration" module="Firebear_PlatformM1" sortOrder="22" parent="Firebear_ImportExport::import_export" action="migration/migration" resource="Firebear_PlatformM1::migration"/>
+    </menu>
+</config>

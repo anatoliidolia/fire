@@ -1,0 +1,22 @@
+<?php
+/**
+ * @copyright: Copyright © 2019 Firebear Studio. All rights reserved.
+ * @author   : Firebear Studio <fbeardev@gmail.com>
+ */
+/**
+ * @var Firebear\PlatformM1\Block\Adminhtml\Menu $block
+ */
+
+$logLink = 'https://firebearstudio.com/blog/manual-for-free-magento-1-to-magento-2-migration-add-on-for-improved-import-and-export-extension.html';
+?>
+<div class="fire_menu">
+    <img src="<?= /** @noEscape */ $block->getViewFileUrl('Firebear_ImportExport::images/logo.png') ?>"
+         width="50px" />
+    <div>
+        <div class="name">
+            <span>
+                <?= $block->escapeHtml(__('Firebear Improved Import & Export Migration add-on v. %1', $block->getVersion())) ?>
+            </span>
+        </div>
+    </div>
+</div>
